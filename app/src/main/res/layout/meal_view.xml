@@ -1,0 +1,146 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:requiresFadingEdge="vertical"
+        android:adjustViewBounds="true"
+
+         />
+
+      <ImageView
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_alignLeft="@id/image"
+          android:layout_alignTop="@+id/image"
+          android:paddingLeft="16dp"
+
+          android:paddingTop="8dp"
+          android:id="@+id/meal_type_image"/>
+
+      <TextView
+          android:layout_alignTop="@id/image"
+          android:layout_alignRight="@id/image"
+          android:id="@+id/price"
+          android:layout_width="wrap_content"
+          android:textSize="24sp"
+          android:textColor="#FFFFFF"
+          android:layout_height="wrap_content"
+          android:paddingRight="16dp"
+          android:paddingTop="8dp"
+          android:shadowColor="#333333"
+          android:shadowDx="1"
+          android:shadowDy="1"
+          android:shadowRadius="1"
+          />
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/image"
+          android:layout_margin="1dp"
+          android:gravity="left"
+          android:animateLayoutChanges="true"
+          >
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+          <TextView
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:id="@+id/title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:textSize="24sp"
+              android:fontFamily="sans-serif-condensed"
+              android:textColor="#ffffff" />
+
+
+          </LinearLayout>
+
+
+          <TextView
+
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="16sp"
+              android:fontFamily="sans-serif"
+              android:layout_alignBottom="@+id/title"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:paddingBottom="8dp"
+              android:visibility="gone"
+              android:textColor="#FFFFFF"
+              android:id="@+id/description"
+              android:shadowColor="#333333"
+              android:shadowDx="1"
+              android:shadowDy="1"
+              android:shadowRadius="1"
+              />
+
+      </LinearLayout>
+
+  </RelativeLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <ImageButton
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:src="@drawable/ic_remove_white_36dp"
+          android:background="@drawable/button_selector"
+          android:id="@+id/remove_meal"
+          android:maxWidth="50dp"
+          android:layout_gravity="center"/>
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:textSize="24sp"
+          android:id="@+id/quantity"
+
+          android:textAlignment="center"
+          android:fontFamily="sans-serif"
+          android:textColor="#333333"
+          android:text="0"/>
+
+      <ImageButton
+          android:background="@drawable/button_selector"
+          android:layout_width="0dp"
+          android:maxWidth="50dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:src="@drawable/ic_add_white_36dp"
+          android:id="@+id/add_meal"
+          android:layout_gravity="center"/>
+
+
+
+
+
+
+      </LinearLayout>
+
+</LinearLayout>
